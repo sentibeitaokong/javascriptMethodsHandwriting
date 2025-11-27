@@ -27,7 +27,7 @@ var methods = {
         const cloneTarget = new target.constructor()
         hash.set(target, cloneTarget)
         Reflect.ownKeys(target).forEach(key => {
-            cloneTarget[key] = deepClone(target[key], hash)
+                cloneTarget[key] = deepClone(target[key], hash)
         })
         return cloneTarget
     },

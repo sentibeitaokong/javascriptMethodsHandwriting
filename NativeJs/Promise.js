@@ -189,7 +189,7 @@ class MyPromise{
             }
             values.forEach((item,i)=>{
                 if(isPromise(item)){
-                    item.then(resolve,reject=>{
+                    item.then((resolve,reject)=>{
                         count++
                         if(count===values.length){
                             reject(new Error('All promises were rejected'))

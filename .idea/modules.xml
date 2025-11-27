@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/promise.iml" filepath="$PROJECT_DIR$/.idea/promise.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../React-test/.idea/react-codeReview.iml" filepath="$PROJECT_DIR$/../React-test/.idea/react-codeReview.iml" />
     </modules>
   </component>
 </project>

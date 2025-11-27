@@ -19,19 +19,20 @@ var child2=new Child()
 child2.getName()*/
 
 //构造函数继承   缺陷：每次创建实例都会创建一次实例方法
-/*function Parent(age){
+function Parent(age){
     this.name=age
     this.age=[18,20]
 }
 function Child(name) {
     Parent.call(this,name)
-}*/
+}
+Child.prototype.value=1
 
+var child=new Child('kevin')
 
-/*var child=new Child('kevin')
 child.age.push(19)
 var child2=new Child('kevin')
-console.log(child.age,child2.age)*/
+console.log(child.age,child2.age,child.value,child2.value)
 
 //组合继承    缺陷：会调用两次构造函数
 /*function Parent(name) {
